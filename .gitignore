@@ -1,0 +1,6 @@
+
+# all installed node modules 
+node_modules/
+
+# all bower_components
+bower_components/
