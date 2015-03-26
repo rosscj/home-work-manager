@@ -9,8 +9,8 @@ angular.module('myApp.work', ['ngRoute'])
   });
 }])
 
-.controller('WorkCtrl', ['$scope', function($scope) {
+.controller('WorkCtrl', ['$scope', 'workDataService', function($scope, workDataService) {
 	
-	$scope.message = "hi there";
+	$scope.message = "hi there " + workDataService.testValue;
 	
 }]);
