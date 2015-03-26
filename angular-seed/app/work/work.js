@@ -13,4 +13,13 @@ angular.module('myApp.work', ['ngRoute'])
 	
 	$scope.message = "hi there " + workDataService.testValue;
 	
+	workDataService.getWorkItems(
+		function(data, status, headers, config) {
+			$scope.apiResp = status;
+		},
+		function(data, status, headers, config) {
+			$scope.apiResp = status;
+		}
+	);
+	
 }]);
